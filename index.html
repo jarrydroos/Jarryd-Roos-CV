@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Jarryd Roos CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background: url('glass.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        #top {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: grey 5px 5px;
+            color: white;
+        }
+        
+        #jay {
+            height: 300px;
+            width: auto;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            border-radius: 20px;
+            border-style: dashed;
+            margin-left: 800px
+        }
+        
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            width: 300px;
+        }
+        
+        #border {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            width: 320px;
+            position: absolute;
+            border: black;
+            border-radius: 15px;
+            border-style: solid;
+            margin-right: 1520px;
+            margin-bottom: -300px;
+            background-color: whitesmoke;
+            opacity: 0.8;
+        }
+        
+        #borderRight {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            width: 320px;
+            position: absolute;
+            border: black;
+            border-radius: 15px;
+            border-style: solid;
+            margin-left: 1520px;
+            margin-top: 1px;
+            background-color: whitesmoke;
+            opacity: 0.8;
+            margin-bottom: 50px;
+        }
+        
+        #borderCent {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            width: 320px;
+            position: absolute;
+            border: black;
+            border-radius: 15px;
+            border-style: solid;
+            margin-left: 750px;
+            margin-top: 1px;
+            background-color: whitesmoke;
+            opacity: 0.8;
+        }
+        
+        #borderCent:hover {
+            color: red;
+            background-color: black;
+            border-radius: 15px;
+            height: 800px;
+            opacity: 1;
+            border: whitesmoke;
+            border-style: solid;
+            height: 220px;
+        }
+        
+        #border:hover {
+            color: red;
+            background-color: black;
+            border-radius: 15px;
+            height: 800px;
+            opacity: 1;
+            border: whitesmoke;
+            border-style: solid;
+            height: 550px;
+        }
+        
+        #borderRight:hover {
+            color: red;
+            background-color: black;
+            border-radius: 15px;
+            height: 800px;
+            opacity: 1;
+            border: whitesmoke;
+            border-style: solid;
+            margin-bottom: 50px;
+            height: 550px;
+        }
+        
+        .container {
+            text-align: center;
+            /* padding-bottom: 150px; */
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 100px;
+        }
+        /*  swiper stuff */
+        
+        .swiper-container {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            margin-left: 180px;
+            margin-top: 450px;
+            padding-bottom: 500px;
+        }
+        
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            background-color: #f2f2f2;
+        }
+        
+        .swiper-slide .swiper-container .imgBx {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .swiper-slide .swiper-container .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .swiper-slide .swiper-container .content {
+            position: absolute;
+            bottom: 0;
+            height: 80px;
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .content h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-left: 35px;
+            color: whitesmoke;
+        }
+        
+        .content span {
+            text-align: center;
+            font-size: 16px;
+            color: red;
+            margin-left: 5px;
+        }
+        
+        .info {
+            border-style: solid;
+            border-radius: 15px;
+            background-color: black;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: red;
+            margin-left: 120px;
+        }
+        
+        #out {
+            text-align: center;
+            margin-left: 500px;
+            width: 800px;
+        }
+        
+        .modal-body {
+            text-align: center;
+            color: red;
+            padding-left: 150px;
+            background-color: black;
+            border: whitesmoke;
+            border-style: solid;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <h1 id="top">Jarryd Roos CV</h1>
+    <img src=jarryd.jpg id="jay">
+
+    <div id="borderCent">
+        <p id="details"><br> Jarryd Gavin Roos <br>Century on lake,<br> century place blvd,<br> Cape Town 7441. <br> Cell Phone - 082 734 6484 <br> Email Address -<a href="mailto:webmaster@example.com">jarrydroos@hotmail.com </a> <br>
+        </p>
+
+
+    </div>
+    <div id="border">
+        <!-- <p id="details"><br> Jarryd Gavin Roos <br>Century on lake,<br> century place blvd,<br> Cape Town 7441. <br> Cell Phone - 082 734 6484 <br> Email Address - jarrydroos@hotmail.com <br>
+        </p> -->
+
+        <h1 style="font-size: 30px;font-style: italic; ">About Me</h1>
+        <p id="about"> My name is Jarryd Roos , I am 32 years old born and raised in Cape Town, South Africa. I have been studying with HyperionDevelopment since March 2020, so I am very much still a noob when it comes to coding. I decided to learn how to code to change
+            my career path, I am currently a personal trainer. My passion has always been a mix of technology and physical fitness, i see learning to code as a way to merge the two and be able to create applications that can help other trainers reach
+            more people in the future. Once I have finished with HyperionDevelopment I would look to continue improving my new skills and search for a job in the industry with an international company.
+        </p>
+    </div>
+
+
+    <div id="borderRight">
+        <p id="details">HyperionDevelopment BootCamp
+        </p>
+
+        <h1 style="font-size: 30px;font-style: italic; ">HyperionDevelopment</h1>
+        <p id="about"> With HyperionDevelopment I have gained new skills, HTML, CSS, javaScrpit and Jquery so far. With these skills I have been able to build a calculator and a store with a working cart that you can click items to store them and bring up a cart total.
+            I am looking forward to starting with React and gaining better understanding and knowladge as a full stack web developer.
+            <br>Below is the link to store project I have worked on.
+            <a href="https://github.com/jarrydroos?tab=repositories">HyperionDev store</a> (The store is still under developemnt so it is hidden). <br> I have no linked in page at the moment but you can find me on facebook <a href="https://www.facebook.com/jarrydroos">Jarryd Roos Facebook</a>
+        </p>
+    </div>
+
+
+
+    <!-- Modal start and cards -->
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">X</button>
+                    <h2 class="modal-title"> My Skills</h2>
+                </div>
+                <div class="modal-body">
+                    <p>HTML,CSS,JavaScript,React</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal" id="mymodal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">X</button>
+                    <h2 class="modal-title">Work History</h2>
+                </div>
+                <div class="modal-body">
+                    <p> I currently have no work experiance in the full stack web developemnt roll. <br> I have worked as a Personal Trainer, Strength and Conditioning coach and nutritionist for the past 10 years. <br> Body Excel 2007-2010 <br> EVO Fitness
+                        2010-2015
+                        <br> Progressive Edge 2016-2017 <br> Point Break 2017-2019 <br> Stronger Project 2019-Current</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal" id="mymodal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">X</button>
+                    <h2 class="modal-title">Education</h2>
+                </div>
+                <div class="modal-body">
+                    <p> Currently studying Full Stack Web Development with HyperionDevelopment. I enrolled in March 2020. <br> Previous Education <br> ACE-2007- Personal Trainer <br> ISSA-2011 Certified Strength and Coditioning Specialist <br> Eleiko-2013
+                        Barbell Club Coach <br> Precision Nutrition- 2015 Nutrition Coach <br> HyperionDevelopment-2020 </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal end -->
+
+    <!-- Swiper -->
+    <!-- skills slider box -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="skills2.jpg" alt="skill">
+                </div>
+                <div class="content">
+                    <h2>Skills list <br> <span>Full Stack Web Developer</span> </h2>
+
+                </div>
+                <div class="card-footer">
+                    <a href="#" data-toggle="modal" data-target="#mymodal" class="info"> 
+                            More info </a>
+                </div>
+
+            </div>
+
+            <!-- work slider box -->
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="work2.jpg" alt="skill">
+                </div>
+                <div class="content">
+                    <h2>Work History <br> <span>Full Stack Web Developer</span> </h2>
+
+                </div>
+                <div class="card-footer">
+                    <a href="#" data-toggle="modal" data-target="#mymodal2" class="info"> 
+                            More info </a>
+                </div>
+
+            </div>
+            <!-- education slider box -->
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="education2.jpg" alt="skill">
+                </div>
+                <div class="content">
+                    <h2>Education History <br> <span>Full Stack Web Developer</span> </h2>
+                </div>
+                <div class="card-footer">
+                    <a href="#" data-toggle="modal" data-target="#mymodal3" class="info"> 
+                            More info </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script type="text/javascript">
+        let swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            }
+        });
+    </script>
+</body>
+
+
+</html>
